@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refesh" content="10"/>
+  <! --Refreshes the page after every 10 seconds -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nekta Management System</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🐝 Nekta</div>
+      <ul class="nav-links">
+        <li><a href="#home" title="Goes to home page">Home</a></li>
+        <li><a href="#about" title="Goes to about ">About</a></li>
+        <li><a href="#about" title="Registering farmer">Register Farmer</a></li>
+        <li><a href="#products" title="Products offered">Products</a></li>
+        <li><a href="#about" title="Goes to gallery ">Gallery</a></li>
+        <li><a href="#gallery" title="Shows the company reports">Reports</a></li>
+        <li><a href="#contacts" title="For contacts and information">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Welcome to Nekta Management System</h1>
+      <p>Pure honey, healthy bees, and sustainable beekeeping.</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Nekta Management System is committed to eco-friendly honey production and 
+      sustainable beekeeping. We care for our bees while delivering 
+      high-quality organic honey and related products to our customers.
+    </p>
+  </section>
+  <section id="Register">
+    <h2>Farmer Registration</h2>
+    <form>
+      <label for="name">Full Name:</label><br>
+      <input type="text" name="name" id="name"><br><br>
+      <label for="id">National ID:</label><br>
+      <input type="text" name="id" id="id"><br><br>
+      <label for="Location">Location:</label><br>
+      <input type="text" name="location" id="location"><br><br>
+      <label for="hives">Number of Hives:</label><br>
+      <input type="text" name="hives" id="hives"><br><br>
+      <button type="submit">Register</button>
+    </form>
+    </section>
+  
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+      <div class="card">
+        <h3>🍯 Organic Honey</h3>
+        <p>Raw, unprocessed honey full of natural nutrients.</p>
+      </div>
+      <div class="card">
+        <h3>🕯 Beeswax Candles</h3>
+        <p>Eco-friendly candles with a natural honey scent.</p>
+      </div>
+      <div class="card">
+        <h3>🌿 Propolis Extracts</h3>
+        <p>Natural immune booster with medicinal benefits.</p>
+      </div>
+      <div class="card">
+        <h3>🌸 Bee Pollen</h3>
+        <p>Rich in vitamins, proteins, and antioxidants.</p>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300x200" alt="Beehive">
+      <img src="https://via.placeholder.com/300x200" alt="Honey jars">
+      <img src="https://via.placeholder.com/300x200" alt="Bees at work">
+      <img src="https://via.placeholder.com/300x200" alt="Wax candles">
+    </div>
+  </section>
+  <section id="Reports">
+    <p>Reports of registered farmers and honey production will appear here.</p>
+    </section>
+<section id="contacts">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-response" class="thank-you"></p>
+    <p class="contact-info">
+      📧 info@nekta.com | 📞 0114226502 | 📍 Embu, Kenya
+    </p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Nekta Management System. All rights reserved.</p>
+  </footer>
+
+  <!-- CSS -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+
+    body {margin: 0;
+          font-family: Arial,sans-serif;
+          background: linear-gradient(135deg,#fff7d1,#ffda77,#ffb347);
+          background-attachment: fixed;
+          background-size: cover;
+          color: #333;}
+header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+    nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 15px; }
+    .logo { font-weight: bold; font-size: 1.5rem; color: #d89b1f; }
+    .nav-links { list-style: none; display: flex; gap: 18px; }
+    .nav-links a { text-decoration: none; color: #333; padding: 5px 10px; border-radius: 5px; }
+    .nav-links a:hover { background: #f0e6c8; }
+
+    .hero { background: url('https://via.placeholder.com/1200x500') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .hero-text { background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .btn { display: inline-block; padding: 10px 20px; background: #d89b1f; color: #fff; text-decoration: none; border-radius: 5px; }
+    .btn:hover { background: #b98217; }
+
+    section { max-width: 1100px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    section h2 { margin-bottom: 20px; text-align: center; color: #d89b1f; }
+
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: #fdfbf6; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+    .gallery-grid img { width: 100%; border-radius: 10px; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto; }
+    .contact-form input, .contact-form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    .contact-form button { padding: 12px; background: #d89b1f; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    .contact-form button:hover { background: #b98217; }
+    .thank-you { margin-top: 15px; text-align: center; font-weight: bold; color: green; }
+    .contact-info { margin-top: 15px; text-align: center; }
+
+    footer { text-align: center; padding: 15px; margin-top: 20px; background: #fff; border-top: 1px solid #eee; color: #666; }
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.querySelector('.contact-form');
+    const responseMsg = document.getElementById('form-response');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // stop page reload
+
+      // Get user input values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Show thank you message
+      responseMsg.textContent = `✅ Thank you, ${name}! Your message has been received.`;
+      
+      // Clear form fields
+      form.reset();
+    });
+  </script>
+</body>
+</html>
